@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess my number</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="top-box">
+        <button class="btn btn--again btn--small" id="again-top">Again!</button>
+        <button class="btn btn--help btn--medium">Help</button>
+        <div class="modal hidden">
+          <button class="close-modal">&times;</button>
+          <h2 class="modal-title"></h2>
+          <p class="modal-text"></p>
+        </div>
+        <div class="overlay hidden"></div>
+        <p class="between">(Between 1 and <span class="max">40</span>)</p>
+      </div>
+      <h1 class="primary-heading">Guess My Number</h1>
+      <p class="number">?</p>
+    </header>
+    <main>
+      <section class="container">
+        <p class="message">Start guessing...</p>
+        <div class="left-box">
+          <input type="number" class="guess" />
+          <button class="btn check">Check!</button>
+          <button class="btn btn--again btn--medium hidden" id="again-bottom">
+            Again!
+          </button>
+        </div>
+        <div class="right-box">
+          <p class="label-attemps">
+            Attempts: <span class="attempts">None</span>
+          </p>
+          <p class="label-score">Score: <span class="score">20</span></p>
+          <p class="label-highscore">
+            Highscore: <span class="highscore">0</span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
