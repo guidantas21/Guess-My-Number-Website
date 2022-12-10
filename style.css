@@ -63,18 +63,12 @@ body {
   transition: all 0.3s;
 }
 
-/* ****************** */
-/* GENERAL REUSABLE COMPONENTS */
-/* ****************** */
+/* GENERIC COMPONENTS */
 
 .container {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
-}
-
-.hidden {
-  display: none;
 }
 
 .btn {
@@ -91,6 +85,36 @@ body {
 .btn:hover {
   color: #ccc;
   transform: translate(0, -3%);
+}
+
+.grid--2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  row-gap: 4.8rem;
+  column-gap: 9.6rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.background-color--victory {
+  background-color: #b2f2bb;
+}
+
+.background-color--defeat {
+  background-color: #ffc9c9;
+}
+
+.top-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 2.4rem;
+  margin-bottom: 9.6rem;
 }
 
 .btn--check:hover {
@@ -110,4 +134,120 @@ body {
 .btn--small {
   font-size: 1.6rem;
   padding: 1.2rem 2.4rem;
+}
+
+/* MODAL */
+
+.modal {
+  width: 45%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #f8f9fa;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  padding: 6rem;
+  z-index: 10;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  z-index: 5;
+}
+
+/* HEADER */
+
+.primary-heading,
+.secret-number {
+  color: #333;
+  font-size: 5.2rem;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin-bottom: 9.6rem;
+}
+
+.secret-number {
+  transform: all 0.4s;
+}
+
+/* MAIN */
+
+.message {
+  grid-column: 1 / -1;
+
+  font-size: 1.8rem;
+  transform: all 0.4s;
+}
+
+.secret-number--victory,
+.message--victory {
+  color: #2f9e44;
+}
+
+.secret-number--defeat,
+.message--defeat {
+  color: #e03131;
+}
+
+.left-box {
+  justify-self: end;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.guess {
+  width: 20rem;
+
+  display: block;
+
+  background-color: inherit;
+  font-family: inherit;
+  font-size: 4rem;
+  color: #e67700;
+  padding: 2.4rem;
+  border: none;
+  border-bottom: 5px solid #333;
+  text-align: center;
+}
+
+.right-box {
+  justify-self: start;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.label-score,
+.label-highscore {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+.label-attemps {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
 }
