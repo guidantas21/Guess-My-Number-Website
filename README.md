@@ -2,13 +2,13 @@
 
 ## Overview
 
-1. The project
-    This projct is a simple game that runs on the browser, in which the player is supposed to guess a secret number from 1 to x (usually x is 200). As the player tries to guess the number, he receives feedback if the guess is higher or lower than the secret number, and also the player can get some help on his last try, that will give some hints about the secret number.
+1. The project:
+    - This projct is a simple game that runs on the browser, in which the player is supposed to guess a secret number from 1 to x (usually x is 200). As the player tries to guess the number, he receives feedback if the guess is higher or lower than the secret number, and also the player can get some help on his last try, that will give some hints about the secret number.
 
-2. Technology
-    Basically [HTML & CSS](https://www.w3.org/standards/webdesign/htmlcss) with [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and basic [Document Object Model (DOM)](https://www.freecodecamp.org/news/javascript-dom-manipulation/#:~:text=In%20website%20development%2C%20DOM%20stands,very%20common%20in%20web%20development.). For the HTML & CSS part I was able to implement grid and flex layouts as well create reusable classes and classes that will interact with JavaSrcipt in order to change the atributes and styling of its element. This way, DOM manipulation is a handy way to implement these interactions. 
+2. Technology:
+    - Basically [HTML & CSS](https://www.w3.org/standards/webdesign/htmlcss) with [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and basic [Document Object Model (DOM)](https://www.freecodecamp.org/news/javascript-dom-manipulation/#:~:text=In%20website%20development%2C%20DOM%20stands,very%20common%20in%20web%20development.). For the HTML & CSS part I was able to implement grid and flex layouts as well create reusable classes and classes that will interact with JavaSrcipt in order to change the atributes and styling of its element. This way, DOM manipulation is a handy way to implement these interactions. 
 
-4. More about
+4. More about":
     - TODO
 
 ## How to install and run
